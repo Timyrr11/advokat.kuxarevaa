@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+header{ 
+    background-color: #b3a99d;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{ 
+display:inline-block;    
+}
+
+.ho1{
+    position: relative;
+    right: 50px;
+}
+
+
+.razruv{ 
+    display: inline-block;
+    margin: 50px;
+}
+
+.polosa{ 
+    height: 2px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    color: red;
+    background-image:url(logo.jpg);
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+body{
+margin: 0;
+padding: 0 ;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px;
+    gap: 30px;
+}
+
+.podval{
+    background-color: #b4a38e;
+    padding: 75px;
+}
+
+.rig{
+    width: 150px;
+    height: 700px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    left:300px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.menu-items{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-items a:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-up{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftt{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 100px;
+
+}
+
+.lefft>article{ 
+    width: 300px;
+}
+
+.pre{ 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    text-shadow: 1px 1px 2px rgb(129, 126, 126);
+}
+
+.left{ 
+    display: inline-block;
+    background-color: #c5c3be;
+    border-radius: 15px;
+    color:rgb(68, 65, 65);
+    padding: 5%;
+    text-shadow:1px 1px 2px rgb(248, 248, 248);
+    
+}
+
+.right{
+    display: inline-block;
+    background-color: #c5c3be;
+    border-radius: 15px;
+    color:rgb(68, 65, 65);
+    padding: 5%;
+    text-shadow:1px 1px 2px rgb(248, 248, 248);
+}
+
+.block{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+.centr{ 
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    position: relative;
+    top:22px;
+    height: 95px;
+    color:#b3a99d;
+    text-shadow: rgb(129, 126, 126) 1px 1px 2px;
+}
+
+.description{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7a7979;
+}
+
+
+
+.description-text{ 
+    position: relative;
+    right: 28%;
+    display: inline-block;
+    background-color: #b3a99d;
+    border-radius: 15px;
+    color:rgb(255, 255, 255); 
+    padding: 1%;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+    margin:10px;
+}
+
+.service>article{
+    width: 35%;
+}
+.service{ 
+    display: flex;
+    background-color: #282828;
+}
+
+.service:nth-child(odd){
+    justify-content: flex-end;
+}
+    
+.service:nth-child(even){
+    padding-left: 10%;
+}
+
+.kak1{ 
+    background-color: #b3a99d;
+    border-radius: 15px;
+    color:rgb(248, 248, 248);
+    padding: 1%;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+}
+
+.kak2{ 
+    background-color: #b3a99d;
+    border-radius: 15px;
+    color:rgb(248, 248, 248);
+    padding: 1%;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+}
+
+.kak3{ 
+    background-color: #b3a99d;
+    border-radius: 15px;
+    color:rgb(248, 248, 248);
+    padding: 1%;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+}
+
+.kak4{ 
+    background-color: #b3a99d;
+    border-radius: 15px;
+    color:rgb(248, 248, 248);
+    padding: 1%;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
+}
+
+.priem{ 
+    display: flex;
+    justify-content: center;
+}
+
+.yslo{
+    width: 350px;
+    height: 300px;
+}
+
+.iny{
+    width: 320px;
+    height: 300px;
+}
+
+.ysl{ 
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top:70px;
+    right:90px;
+    text-shadow: 1px 1px 2px rgb(129, 126, 126);
+}
+
+.silka{
+    background-color:rgb(131, 131, 92);
+    width: 40px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.kart{ 
+    width: 100%;
+    height: 300px;
+    background-image:url(chahitaprav.jpg);
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .description-text{ 
+        position: relative;
+        left:50px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .kak1{
+        position: relative;
+        right:30px;
+    }
+
+    .kak3{
+        position: relative;
+        right:40px;
+    }
+
+
+    .ho1{
+        position: relative;
+        left:17px;
+    }
+
+    .yslugi{
+        position: relative;
+        right:74px
+    }
+
+    .ysl{
+        position: relative;
+        left:50px;
+    }
+
+    .ybr{
+        display: none;
+    }
+
+    .leftt{
+        flex-direction: column;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /*Бургер*/
+    .burger_menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+                    }
+
+.burger_menu::before,
+    .burger_menu::after {
+        content: ''; /* пустой контент */
+        background: #352d2d; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+        transition: 0.3s ease;
+    }
+
+
+ .burger_menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger_menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger_menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+
+    /*Меню*/
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #272727;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(100%);
+    }
+
+    .menu-items {
+        flex-direction: column;
+        text-align: right;
+        height: 50%;
+    }
+
+    .polosa1{
+        width: 80%;
+    }
+
+    /* active */
+
+    .burger_menu.active {
+        z-index: 3;
+        transform: translateX(-15vw);
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s ease;
+    }
+    .burger_menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active span {
+        transform: scale(0);
+    }
+
+    .menu.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+    }
+}
+
+.spr{
+    width: 350px;
+    height: 300px;
+}
+
+.menu{
+    z-index:99;
+}
+
+.fixed-size-link {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+  height: 200px; 
+}
+
+.fixed-size-link img {
+  height: 200px; 
+  display: block;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+  object-fit: cover; 
+}
+
+.fixed-size-link:hover img {
+  transform: scale(1.1); 
+}
+
+
+.fixed-size-link:visited img {
+  transform: scale(1); 
+}
+
+.seredina{
+    display: flex;
+    justify-content: center;
+}
+

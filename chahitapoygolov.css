@@ -1,0 +1,275 @@
+header{ 
+    background-color: #b3a99d;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polosa{ 
+    height: 2px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu-items{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-items a:hover{
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .polosa1{
+        display: none;
+    }
+
+
+    .blok{
+        position: relative;
+        left:100px;
+    }
+
+    .chahit{
+        position: relative;
+        left:13px;
+    }
+
+    .seredina{
+        position: relative;
+        left:10px;
+        font-size: 13px;
+    }
+
+    .ser3{
+        position: relative;
+        right:45px;
+    }
+
+     /*Бургер*/
+    .burger_menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+                    }
+
+.burger_menu::before,
+    .burger_menu::after {
+        content: ''; /* пустой контент */
+        background: #352d2d; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+        transition: 0.3s ease;
+    }
+
+
+ .burger_menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger_menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger_menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+
+    /*Меню*/
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #272727;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        text-align: right;
+        height: 50%;
+    }
+
+    .polosa1{
+        width: 80%;
+    }
+
+    /* active */
+
+    .burger_menu.active {
+        z-index: 3;
+        transform: translateX(-15vw);
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s ease;
+    }
+    .burger_menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active span {
+        transform: scale(0);
+    }
+
+    .menu.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+    }
+}
+
+        
+    
+
+
+.logo{
+    color: red;
+    background-image:url(logo.jpg);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+body{
+margin: 0;
+padding: 0 ;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+
+.header-up{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.podval{
+    background-color: #b3a99d;
+    padding: 75px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px;
+    gap: 30px;
+}
+
+
+.menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.back{ 
+    background-image:url(chahitaprav.jpg);
+    width: 100%;
+    height: 200px;
+}
+
+.yrist{ 
+    color:white;
+    position: relative;
+    bottom:130px;
+    display: flex;
+    justify-content: center;
+}
+
+.chahit{ 
+    display: flex;
+    justify-content: center;
+}
+
+.chahita{ 
+    display: flex;
+    justify-content: center;
+}
+
+.seredina{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polosa1{ 
+    left:455px;
+    position: relative;
+    height: 2px;
+    width: 43%;
+    background-color: rgba(58, 77, 77, 0.137);
+}
+
+.centeer{ 
+    display: flex;
+    justify-content: center;
+}
+
+.polosa2{ 
+    left:555px;
+    top:70px;
+    position: relative;
+    height: 2px;
+    width: 35%;
+    background-color: rgba(58, 77, 77, 0.137);
+}
+
+.vnis{
+    position: relative;
+    top:80px;
+}
+
+.inl{ 
+    display: inline-block;
+}
+
+.blok{ 
+    display: inline-block;
+    position: relative;
+    right:270px;
+}
+
+.otstup{ 
+    padding: 55px;
+}
+
+.cen{ 
+    position: relative;
+    right:80px;
+}

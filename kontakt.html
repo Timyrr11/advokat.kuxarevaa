@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="chahitaprav.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-up">
+      <a href ='index.html' class="logo"></a>
+      <div class="email">
+      </div>
+      </div>
+      <div class="polosa"></div>
+      <div class="burger_menu">
+      <span></span>
+      </div>
+      <nav class="menu">
+      <ul class="menu-items">
+      <li><a href="obomne.html">Обо мне</a></li>
+      <li><a href="index.html#final">услуги</a></li> 
+      <li><a href="kontakt.html">Контакты</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <div class="centrr"> 
+    <h1>Мои контакты</h1>
+    </div>
+<article class="description-tex">
+    <h2>✆ 8 988 701 98 68</h2>
+    <h2>✉ olga.kuxareva@mail.ru</h2>
+    <div class="rass"></div>
+    <p>⚲ Ставропольский край г.Зеленокумск </p>
+    <p>пл.Ленина,6,офис 30</p>
+    <p>Приём по записи: Пн–Пт с 08:00 до 18:00</p>
+</article>
+
+ 
+            <script src="kont.js"></script>
+        </body>
+
+
+<style>
+header{ 
+    background-color: #b3a99d;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+
+    .ysl{
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftt{
+        flex-direction: column;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .description-tex{
+        position: relative;
+        left:90px;
+    }
+
+    /*Бургер*/
+    .burger_menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+                    }
+
+.burger_menu::before,
+    .burger_menu::after {
+        content: ''; /* пустой контент */
+        background: #352d2d; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+        transition: 0.3s ease;
+    }
+
+
+ .burger_menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger_menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger_menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+    /*Меню*/
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #272727;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(100%);
+    }
+
+    .menu-items {
+        flex-direction: column;
+        text-align: right;
+        height: 50%;
+    }
+
+    .polosa1{
+        width: 80%;
+    }
+
+    /* active */
+
+    .burger_menu.active {
+        z-index: 3;
+        transform: translateX(-15vw);
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: 0.3s ease;
+    }
+    .burger_menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: 0.3s ease;
+    }
+
+    .burger_menu.active span {
+        transform: scale(0);
+    }
+
+    .menu.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+    }
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   background: #7a7979;;
+   color: #ffffff;
+   font-size: 16px;
+   text-shadow: 1px 1px 2px black;
+}
+
+.user input {
+    padding: 5px;
+    border: 1px solid #3b2e2e;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: #3b2e2e;
+}
+
+.wrapper__title {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5%;
+    position: relative;
+    right:230px;
+    bottom: 290px;
+}
+
+
+.user input:focus,
+.user input:active {
+    border: 1px solid #3b2e2e;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: right;
+    position: relative;
+    right:100px;
+    bottom: 300px;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+
+}
+
+
+.address-date {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rass{
+    padding: 20px;
+}
+
+
+li{ 
+display:inline-block;    
+}
+
+.sleva{
+    display: inline-block;
+    position: relative;
+    left:450px;
+}
+
+.razruv{ 
+    display: inline-block;
+    margin: 50px;
+}
+
+.polosa{ 
+    height: 2px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+}
+
+.centrr{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    color: red;
+    background-image:url(logo.jpg);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+body{
+margin: 0;
+padding: 0 ;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.menu-items{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-items a:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.menu{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-up{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+</style>
